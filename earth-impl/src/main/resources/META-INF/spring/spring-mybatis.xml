@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
+    <!-- 线上数据源 -->
+    <bean id="online" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driver}"></property>
+        <property name="url" value="${jdbc.url1}"></property>
+        <property name="username" value="${jdbc.username1}"></property>
+        <property name="password" value="${jdbc.password1}"></property>
+        <property name="maxActive" value="2"/>
+        <property name="initialSize" value="1"/>
+        <property name="maxIdle" value="2"/>
+        <property name="minIdle" value="1"/>
+        <!-- 等待连接超时时间，30秒 -->
+        <property name="maxWait" value="30000"/>
+    </bean>
+    <!-- spring配置文件配置多数据源关系 -->
+    <bean id="dataSource" class="com.quxin.freshfun.db.DynamicDataSource">
+        <property name="targetDataSources">
+            <map key-type="java.lang.String">
+                <entry key="online" value-ref="online"></entry>
+            </map>
+        </property>
+        <property name="defaultTargetDataSource" ref="online"></property>
+    </bean>
+    <!-- myBatis文件 -->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="mapperLocations">
+            <list>
+                <value>classpath:mapper/**/*.xml</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.quxin.freshfun.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
+    </bean>
+
+</beans>
