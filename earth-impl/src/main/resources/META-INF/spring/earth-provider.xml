@@ -6,13 +6,8 @@
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
 
     <!--业务服务-->
-    <!--<dubbo:service interface="CrmUserService" ref="crmUserService" protocol="dubbo" timeout="6000"/>-->
-    <!--bean 实现-->
-    <!--<bean id="crmUserService" class="com.quxin.earthpl.crmuser.CrmUserServiceImpl"/>-->
-
-    <!--业务服务-->
     <dubbo:service interface="com.quxin.earth.api.oceanuser.OceanUserService" ref="oceanUserService" protocol="dubbo" timeout="6000"/>
     <!--bean 实现-->
-    <bean id="oceanUserService" class="com.quxin.earth.impl.oceanuser.OceanUserServiceImpl"/>
+    <!--<bean id="oceanUserService" class="com.quxin.earth.impl.oceanuser.OceanUserServiceImpl"/>-->
 
 </beans>

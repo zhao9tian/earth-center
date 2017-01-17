@@ -5,7 +5,7 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
 	http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
     <!--dubbo 基础配置-->
-    <dubbo:application name="earth-provider" owner="ziming" organization="freshfun"/>
+    <dubbo:application name="earth-center" owner="ziming" organization="freshfun"/>
     <!--线上环境-->
     <dubbo:registry protocol="zookeeper" address="${zookeeper.address}" timeout="10000"/>
 
