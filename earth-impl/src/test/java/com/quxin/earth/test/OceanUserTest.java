@@ -1,7 +1,6 @@
-package com.quxin.freshfun.test;
+package com.quxin.earth.test;
 
-import com.alibaba.fastjson.JSON;
-import com.quxin.freshfun.api.oceanuser.OceanUserService;
+import com.quxin.earth.api.oceanuser.OceanUserService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

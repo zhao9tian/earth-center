@@ -1,4 +1,4 @@
-package com.quxin.freshfun.boot;
+package com.quxin.earth.boot;
 
 public class ProviderBoot {
 

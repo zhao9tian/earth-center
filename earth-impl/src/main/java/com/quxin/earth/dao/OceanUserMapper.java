@@ -1,4 +1,4 @@
-package com.quxin.freshfun.dao;
+package com.quxin.earth.dao;
 
 import org.apache.ibatis.annotations.Param;
 

@@ -1,4 +1,4 @@
-package com.quxin.freshfun.api.oceanuser;
+package com.quxin.earth.api.oceanuser;
 
 import java.util.Map;
 

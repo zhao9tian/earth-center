@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <groupId>freshfun</groupId>
-        <artifactId>earth-provider</artifactId>
+        <artifactId>earth-center</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
@@ -241,7 +241,7 @@
                     <archive>
                         <addMavenDescriptor>false</addMavenDescriptor>
                     </archive>
-                    <warName>earth-provider</warName>
+                    <warName>earth-center</warName>
                     <webResources>
                         <resource>
                             <directory>src/main/resources/${env}</directory>

@@ -1,4 +1,4 @@
-package com.quxin.freshfun.db;
+package com.quxin.earth.db;
 
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;

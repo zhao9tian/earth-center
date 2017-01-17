@@ -1,4 +1,4 @@
-package com.quxin.freshfun.db;
+package com.quxin.earth.db;
 
 import org.springframework.jdbc.datasource.lookup.AbstractRoutingDataSource;
 

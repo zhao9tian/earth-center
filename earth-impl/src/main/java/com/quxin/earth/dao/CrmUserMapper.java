@@ -1,4 +1,4 @@
-package com.quxin.freshfun.dao;
+package com.quxin.earth.dao;
 
 /**
  * Created by ziming on 2017/1/7.

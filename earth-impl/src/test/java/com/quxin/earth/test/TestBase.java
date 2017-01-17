@@ -1,4 +1,4 @@
-package com.quxin.freshfun.test;
+package com.quxin.earth.test;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;

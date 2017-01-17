@@ -1,8 +1,8 @@
-package com.quxin.freshfun.impl.oceanuser;
+package com.quxin.earth.impl.oceanuser;
 
 import com.alibaba.fastjson.JSON;
-import com.quxin.freshfun.api.oceanuser.OceanUserService;
-import com.quxin.freshfun.dao.OceanUserMapper;
+import com.quxin.earth.api.oceanuser.OceanUserService;
+import com.quxin.earth.dao.OceanUserMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
